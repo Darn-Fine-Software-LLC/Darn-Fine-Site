@@ -379,7 +379,7 @@ ul { list-style: none; }
 /* --- Consulting --- */
 .consulting {
   background-color: var(--color-ink);
-  padding: 5.5rem 2rem 6rem;
+  padding: 5.5rem 2rem 6.5rem;
 }
 
 .consulting-inner {
@@ -463,6 +463,47 @@ ul { list-style: none; }
 .consulting-cta:hover {
   background-color: transparent;
   color: var(--color-rust);
+}
+
+/* --- Client Logos Banner --- */
+.client-logos-banner {
+  border-top: 1px solid rgba(250, 248, 243, 0.08);
+  margin-top: 4.5rem;
+  padding-top: 3rem;
+  /* No horizontal padding or max-width — inherited from .consulting section padding */
+}
+
+.client-logos-eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(250, 248, 243, 0.3);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.client-logos-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+}
+
+.client-logo {
+  height: 32px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+  opacity: 0.45;
+  transition: opacity 0.25s;
+  flex-shrink: 0;
+  display: block;
+}
+
+.client-logo:hover {
+  opacity: 0.8;
 }
 
 /* --- About --- */
@@ -607,6 +648,20 @@ ul { list-style: none; }
 
   .consulting-inner {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .client-logos-banner {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+  }
+
+  .client-logo {
+    height: 26px;
+    max-width: 100px;
+  }
+
+  .client-logos-track {
     gap: 2rem;
   }
 
